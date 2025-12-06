@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Seif Fahmy</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css"> <!-- Your CTA CSS here -->
+<link rel="icon" type="image/png" href="pfp-modified.png">
+
+<style>
+ 
+</style>
+</head>
+
+<body>
+
+<header>
+
+  <div class="nav-wrapper">
+      <img src="pfp.png" id="pfp" alt="Seif Fahmy">
+    <nav>
+      <div class="dropdown" id="socialDropdown">
+        Socials <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+        <div class="dropdown-content">
+          <a href="https://x.com/therealseif_" target="_blank"><i class="bi bi-twitter-x drop-icon"></i>  Twitter</a>
+          <a href="https://www.linkedin.com/in/seif-fahmy-82388b39a/" target="_blank"><i class="bi bi-linkedin drop-icon"></i> LinkedIn</a>
+          <a href="https://www.instagram.com/therealseiffahmy/" target="_blank"><i class="bi bi-instagram drop-icon"></i> Instagram</a>
+          <a href="https://www.youtube.com/@Seif-w" target="_blank"><i class="bi bi-youtube drop-icon"></i>  YouTube</a>
+        </div>
+      </div>
+      <a id="about-link">About</a>
+
+    </nav>
+    <div class="cta dark">Subscribe <i class="bi bi-cursor-fill"></i></div>
+  </div>
+</header>
+
+
+<div class="big-container">
+  <section id="about">
+  <div class="about-container pagina">
+    <h1>Who is Seif Fahmy?</h1>
+    <p class="intro-text">
+    Seif Fahmy is an athlete, entrepreneur, and digital creator who moved from competitive sports to building online businesses and sharing his journey publicly.
+    </p>
+     <p class="dob"><span class="born">FULL NAME</span>
+      <span class="date">Seif Hussein Fahmy</span>
+    </p>
+   
+
+    <p class="dob"><span class="born">BORN</span>
+      <span class="date">01-01-2008</span>
+    </p>
+   
+    <p class="dob"><span class="born">Nationality</span>
+      <span class="date">Egyptian</span>
+    </p>
+    <br>
+
+    <h2>About Seif Fahmy</h2>
+    <p class="about-p">
+    At 15, he won the national kickboxing championship, establishing himself as one of Egypt’s top young fighters before transitioning to MMA
+    </p>
+
+    <p class="about-p">
+    By 16, he had gained advanced skills in programming and coding, developing the technical foundation that would later power his ventures
+    </p>
+
+    <p class="about-p">
+At 17, he founded Nevora, a Cairo-based web agency providing digital solutions to businesses across the MENA region.
+    </p>
+     <p class="about-p">
+and just before turning 18, he began documenting his journey to reach $100K/month in revenue, sharing his strategies, lessons, and experiences in entrepreneurship, technology, and personal development.
+    </p>
+  </div>
+  <br><br><br><br><br><br>
+  
+
+
+  <div class="nsm-parent">
+     <div class="nsm-container">
+  <img src="pfp.png" id="pfp" alt="Seif Fahmy">
+    <div class="nsm-logo"></div>
+
+    <p class="nsm-text">
+       Seif Fahmy’s Business & Growth Blog explores entrepreneurship, technology, and personal development, documenting the journey toward $100K/month in revenue.
+    </p>
+
+    <div class="nsm-social-links">
+        <a href="https://www.instagram.com/therealseiffahmy/" class="nsm-social-icon" aria-label="Instagram">
+            <i class="bi bi-instagram"></i>
+        </a>
+
+        <a href="https://x.com/therealseif_" class="nsm-social-icon x-icon" aria-label="Twitter / X">
+            <i class="bi bi-x-lg"></i>
+        </a>
+
+        <a href="https://www.wikidata.org/wiki/Q136763665" class="nsm-social-icon" aria-label="Wikidata">
+            <i class="bi bi-wikipedia"></i>
+        </a>
+    </div>
+    <br>
+    
+    <div class="nsm-copyright">
+        <i class="bi bi-c-circle"></i>
+        2025 Seif Fahmy. All rights reserved. <br>
+        
+    </div> <br>
+    <div class="dd"> <div class="iphone-toggle">
+  <input type="checkbox" id="themeToggle">
+  <label for="themeToggle" class="toggle-body">
+    <span class="toggle-circle"></span>
+  </label>
+</div></div>
+
+</div>
+  </div>
+ 
+</section>
+
+<section id="home" class="newsletter hidden pagina">
+
+  <div class="home-center">
+    <h1 class="nl-title">Stay in the Loop</h1>
+    <p class="nl-sub">Get updates, tips, and behind-the-scenes stuff straight to your inbox.</p>
+
+   <div class="nl-box">
+  <input type="email" placeholder="Enter your email" class="nl-input" id="emailInput">
+
+  <input type="text" placeholder="Enter your name" class="nl-input hidden" id="nameInput" style="margin-top:10px;">
+
+  <button class="nl-btn" id="joinBtn">Join</button>
+</div>
+
+  </div>
+</section>
+
+<section id="success" class="hidden pagina success-screen">
+  <div class="success-center">
+    <br>
+    <div class="checkmark"></div>
+    <h1 class="success-title">You're In</h1>
+    <p class="success-sub">You Will Start Hearing from us soon</p>
+  </div>
+</section>
+
+
+</div>
+
+
+
+
+
+<script>
+  const dropdown = document.getElementById('socialDropdown');
+  dropdown.addEventListener('click', e => {
+    dropdown.classList.toggle('open');
+  });
+
+  document.addEventListener('click', e => {
+    if (!dropdown.contains(e.target)) {
+      dropdown.classList.remove('open');
+    }
+  });
+</script>
+
+
+
+<script>
+  const home = document.getElementById("home");
+  const about = document.getElementById("about");
+  const aboutLink = document.getElementById("about-link");
+  const pfp = document.getElementById("pfp");
+
+ aboutLink.addEventListener("click", () => {
+    home.classList.remove("visible");
+    home.classList.add("hidden");
+    about.classList.remove("hidden");
+    about.classList.add("visible");
+
+
+
+  });
+   pfp.addEventListener("click", () => {
+    home.classList.remove("hidden");
+    home.classList.add("visible");
+    about.classList.remove("visible");
+    about.classList.add("hidden");
+
+
+
+  });
+</script>
+
+<script>
+const btn = document.querySelector(".nl-btn");
+const input = document.querySelector(".nl-input");
+
+// const home = document.getElementById("home");
+const success = document.getElementById("success");
+
+btn.addEventListener("click", async () => {
+    const email = input.value.trim();
+    if (!email) return;
+
+    // loading animation
+    btn.classList.add("loading");
+
+    const res = await fetch("https://script.google.com/macros/s/AKfycbzx3OnKmhzLalK2dRsi3x46-XmUwViCqSeDtwfemM_yh74ibEjd4XQ51bBDAxHcNLSvvw/exec", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: "email=" + encodeURIComponent(email)
+    });
+
+    btn.classList.remove("loading");
+
+    if (res.ok) {
+        // hide the newsletter page
+        home.classList.remove("visible");
+        home.classList.add("hidden");
+
+        // show the success page
+        success.classList.remove("hidden");
+        success.classList.add("visible");
+    }
+});
+
+
+</script>
+
+ <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Seif Fahmy",
+        "url": "https://seif-fahmy.vercel.app",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "pfp.png"
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Seif Fahmy",
+        "image": {
+            "@type": "ImageObject",
+            "url": "pfp.png",
+            "width": 1200,
+            "height": 1200
+        },
+        "url": "",
+        "sameAs": [
+            "https://www.instagram.com/therealseiffahmy/",
+            "https://x.com/therealseif_"
+        ]
+    },
+    "headline": "About Seif Fahmy - Content Creator, Mixed Martial Artist,",
+    "url": "https://seif-fahmy.vercel.app/about/",
+  "datePublished": "2025-12-06T18:25:00.000Z",
+"dateModified": "2025-12-06T18:25:00.000Z",
+
+    "description": "Seif Fahmy is an athlete, entrepreneur, and digital creator who moved from competitive sports to building online businesses and sharing his journey publicly.",
+    "mainEntityOfPage": "https://seif-fahmy.vercel.app/about/"
+}
+    </script>
+
+<script>
+const toggle = document.getElementById("themeToggle");
+const section = document.querySelectorAll("section");
+
+const ctaa = document.querySelector(".cta");
+
+toggle.addEventListener("change", () => {
+  if (toggle.checked) {
+    document.body.classList.add("dark");
+
+    cta.classList.remove("dark");
+  } else {
+    document.body.classList.remove("dark");
+   
+    ctaa.classList.add("dark");
+
+
+  }
+});
+</script>
+
+<style>
+  
+:root {
+  --bg: #ffffff;
+  --text: #111;
+}
+
+.dark {
+  --bg: #0f0f0f;
+  --text: #eee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body, html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  /* background: #f4f4f4; */
+  color: #111;
+  scroll-behavior: smooth;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+  position: absolute;
+  top: 30px;
+  width: 100vw;
+  height: 0px;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 0 0;
+  z-index: 10000;
+
+}
+
+header img, #pfp {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+header img {
+  width: 44px;
+  height: 44px;
+  margin-right: 20px;
+}
+
+/* NAV WRAPPER */
+.nav-wrapper {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+ background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border-radius: 25px;
+  box-shadow: 0 2px 7px rgba(0,0,0,0.1);
+  padding: 4px 20px 4px 4px;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 8px 20px;
+  /* background: #fff; */
+  border-radius: 25px;
+  /* border-bottom-left-radius: 25px; */
+  font-weight: bold;
+  position: relative;
+  z-index: 10000;
+}
+
+/* DROPDOWN */
+.dropdown {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  z-index: 10000;
+}
+
+.dropdown-icon {
+  margin-left: 5px;
+  margin-bottom: 1px;
+  font-size: .8rem;
+  transition: transform .3s;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  min-width: 150px;
+  overflow: hidden;
+  opacity: 0;
+  max-height: 0;
+  transition: max-height .3s ease, opacity .3s ease;
+  z-index: 10000;
+}
+
+.dropdown.open .dropdown-content {
+  opacity: 1;
+  max-height: 500px;
+}
+
+.dropdown.open .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+.dropdown-content a {
+  display: flex;
+  gap: 10px;
+  padding: 8px 12px;
+   background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+  font-weight: normal;
+  transition: background .2s;
+}
+
+.dropdown-content a:hover {
+    background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+
+/* GENERAL SECTIONS */
+section {
+  padding: 120px 20px 80px;
+  text-align: center;
+}
+
+/* ABOUT PAGE */
+.about-container {
+  max-width: 900px;
+  /* margin: 0; */
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  margin: 0 auto;
+   margin-top: 1200px; 
+ 
+}
+
+#about {
+   background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+  height: 100%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#about h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 30px;
+  text-align: left;
+   background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+
+#about h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+   background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+
+.about-text, .about-p {
+  font-size: 1.2em;
+  max-width: 670px;
+  /* margin-left: 10px; */
+  text-align: left;
+    background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+  line-height: 1.75;
+}
+
+.intro-text {
+  font-size: 1.1rem;
+   background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+  margin-bottom: 50px;
+  line-height: 1.7;
+  max-width: 670px;
+}
+
+.intro-text a {
+  color: #0066ff;
+  text-decoration: underline;
+}
+
+/* CTA */
+.cta {
+    background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+  padding: 10px 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 5px rgba(132,132,132,0.3);
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background .2s, transform .2s;
+}
+
+/* NEWSLETTER */
+.nl-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.nl-sub {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.nl-box {
+  width: 100%;
+  display: flex;
+  border-radius: 16px;
+  align-items: center;
+    background-color: #e4e4e4;
+
+  border-radius: 15px;
+  
+}
+
+.nl-input {
+  flex: 1;
+  padding: 11px 16px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background-color: #e4e4e4;
+  border-radius: 15px;
+
+}
+
+.nl-btn {
+  padding: 11px 42px;
+   background-color: #000;
+   color: white;
+  transition: background 0.3s, color 0.3s;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 15px;
+  font-weight: 600;
+  height: 80%;
+  position: relative;
+  margin-right: 1px;
+  text-align: center;
+}
+
+.newsletter {
+  overflow: hidden;
+
+}
+
+/* SOCIAL MEDIA BOX */
+.nsm-container {
+  max-width: 500px;
+  margin-right: auto;
+  padding: 25px;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nsm-logo {
+  display: inline-block;
+  padding: 5px 8px;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+}
+
+.nsm-text {
+    background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 500;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.nsm-social-links {
+  display: flex;
+  gap: 10px;
+}
+
+.nsm-social-icon {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  transition: border-color .2s, color .2s;
+}
+
+.nsm-social-icon.x-icon {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nsm-social-icon:hover {
+  border-color: #4A90E2;
+  color: #4A90E2;
+}
+
+.nsm-copyright {
+  font-size: 13px;
+  color: #888;
+  margin-top: 15px;
+  text-align: left;
+}
+
+@media (max-width: 550px) {
+  .nsm-container {
+    padding: 15px;
+  }
+  .nsm-text {
+    font-size: 16px;
+  }
+  .nsm-social-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+  }
+  .nsm-copyright {
+    font-size: 12px;
+  }
+}
+
+/* PAGE SWITCHING */
+.big-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#home, #about {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  transition: opacity .35s ease, transform .35s ease;
+}
+
+.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+  z-index: 10;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(30px);
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+  padding: 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.home-center {
+  position: relative;
+  bottom: -4%;
+  overflow: hidden;
+}
+.about-container h1, .about-container h2 , .about-p, .intro-text, .dob{
+  margin-left: 3%;
+}
+
+.about-container h1{
+  position: relative;
+  top: 40px;
+}
+
+@media (max-width: 550px) {
+  .nav-wrapper {
+    width: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 4px;
+    justify-content: center;
+
+  }
+
+  nav {
+    gap: 10px; /* reduce space between items */
+    padding: 6px 12px; /* shrink inner padding */
+    font-size: 0.9rem; /* smaller text on mobile */
+  }
+
+  .cta {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+  }
+
+  .dropdown-content {
+    min-width: 120px; /* smaller dropdowns */
+  }
+  #about-link, #socialDropdown{
+  font-size: .9em;
+}
+#pfp{
+  width: 40px;
+  height: 40px;
+}
+}
+
+.born{
+  background: var(--bg);
+  color: grey;
+  transition: background 0.3s, color 0.3s;
+  font-weight: bold;
+ 
+}
+
+.date{
+  color: var(--text);
+  font-size: 2em;
+}
+
+.dob{
+ 
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #f0f0f0;
+  width: fit-content;
+  padding: 20px;
+  border-radius: 20px; */
+}
+
+/* hidden/visible classes already exist, so reuse them */
+.success-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  flex-direction: column;
+  text-align: center;
+    background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+.success-center {
+  text-align: center;
+  width: 100%;
+  position: relative;
+  top: 18vh;
+}
+
+.checkmark {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 5px solid #4CAF50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 auto; /* forces center */
+}
+
+.checkmark::after {
+  content: "";
+  width: 25px;
+  height: 50px;
+  border-right: 5px solid #4CAF50;
+  border-bottom: 5px solid #4CAF50;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 2px;  /* perfect vertical placement */
+  left: 25px; /* perfect horizontal placement */
+}
+
+
+.nl-btn.loading {
+  pointer-events: none;
+  position: relative;
+  color: transparent;
+}
+
+.nl-btn.loading::after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  border: 3px solid #fff;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+/* light mode default */
+:root {
+  --bg: #ffffff;
+  --text: #000;
+}
+
+/* dark mode */
+.dark {
+  --bg: #0f0f0f;
+  --text: #eee;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+
+/* actual toggle */
+.iphone-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle-body {
+  width: 50px;
+  height: 28px;
+  background: #ccc;
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: block;
+}
+
+.toggle-body::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.25s;
+}
+
+#themeToggle:checked + .toggle-body {
+  background: #4cd964;
+}
+
+#themeToggle:checked + .toggle-body::after {
+  transform: translateX(22px);
+}
+
+/* hide checkbox */
+#themeToggle {
+  display: none;
+}
+
+
+
+
+.dd{
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* EMAIL SLIDE LEFT */
+.slide-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: all 0.25s ease;
+}
+
+/* NAME HIDDEN INITIALLY */
+#nameInput {
+  opacity: 0;
+  transform: translateX(40px);
+  pointer-events: none;
+  transition: all 0.25s ease;
+}
+
+/* NAME VISIBLE */
+#nameInput.show {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+</style>
+
+
+</body>
+</html>
